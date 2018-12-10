@@ -19,6 +19,7 @@ ax.set_xlabel(r'$x_1$')
 ax.set_ylabel(r'$x_2$')
 
 data = pd.read_csv("../data/data.csv", dtype={'x1': np.float64, 'x2': np.float64, 'y': np.int32})
+nd_data = data.values
 
 colors = ['red', 'blue'] # red is negative, blue is positive
 for index, row in data.iterrows():
